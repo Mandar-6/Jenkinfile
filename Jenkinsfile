@@ -18,6 +18,7 @@ pipeline {
             steps {
                 script {
                     // Example build script
+                    sh 'chmod +x ./build.sh'
                     sh './build.sh'  // If you have a build script, execute it
                 }
             }
