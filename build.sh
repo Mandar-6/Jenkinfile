@@ -8,4 +8,4 @@ npm install
 npm run build
 
 echo "Build complete!"
-chmod +x build.sh
+
