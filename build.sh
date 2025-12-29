@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Running build script..."
-
+sudo apt-get install npm
 # Install dependencies
 npm install
 
