@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Running build script..."
 
 # Install dependencies
