@@ -26,29 +26,6 @@ pipeline {
             }
         }
 
-        stage('Frontend-Test') {
-            steps {
-                script {
-                    // Add steps for running tests here, e.g., unit tests
-                    dir('Frontend'){
-                    sh './test,sh'  // Replace with your test command if using Node.js
-                    }
-                }
-            }
-        }
-
-        stage('Frontend-Deploy') {
-            steps {
-                script {
-                    // If you have a deploy script, run it
-                    dir('Frontend'){
-                    sh './deploy.sh'  // Example deploy script
-                    }
-                }
-            }
-        }
-    }
-
     post {
         success {
             // Actions to take on success
