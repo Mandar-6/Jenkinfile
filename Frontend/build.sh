@@ -8,5 +8,5 @@ npm install #install dependencies
 
 npm run build #this will run the build and the format depends on tech stack
 
-echo "Build complete!"
+echo "Build complete!" #to print the message when build complete
 
