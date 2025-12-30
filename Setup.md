@@ -1,5 +1,6 @@
 ## Set up for the Project
 
+    This is the setup for the project
     Node.js and MySQL should be installed:
     Node should be added in the PATH in environment variables.
 
@@ -99,4 +100,5 @@
     cd C:\Users\User\Desktop\chemflo\frontend
     npm install
     npm start
+
     ```
