@@ -26,7 +26,7 @@ pipeline {
                 }
             }
         }
-
+    }
     post {
         success {
             // Actions to take on success
@@ -38,4 +38,3 @@ pipeline {
         }
     }
 }
-} //for ending the curly braces
