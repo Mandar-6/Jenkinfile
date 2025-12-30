@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Add steps for running tests here, e.g., unit tests
-                    sh 'npm test'  // Replace with your test command if using Node.js
+                    sh 'npm run'  // Replace with your test command if using Node.js
                 }
             }
         }
