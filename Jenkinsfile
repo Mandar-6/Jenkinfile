@@ -29,11 +29,11 @@ pipeline {
     post {
         success {
             // Actions to take on success
-            echo 'Build and deploy successful for frontend!'
+            echo 'Build and deploy successful for frontend!' //done
         }
         failure {
             // Actions to take on failure
-            echo 'Build failed for forntend!'
+            echo 'Build failed for forntend!' //fail
         }
     }
 }
