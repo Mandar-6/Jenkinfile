@@ -5,7 +5,8 @@ echo "Running build script......"
 npm install #install dependencies
 
 # Build the project (change according to your tech stack)
-npm run build
+
+npm run build #this will run the build
 
 echo "Build complete!"
 
