@@ -14,29 +14,32 @@ pipeline {
             }
         }
 
-        stage('Build') {
+        stage('Frontend-Build') {
             steps {
                 script {
                     // Example build script
+                    dir('Frontend')
                     sh 'chmod +x ./build.sh'
                     sh './build.sh'  // If you have a build script, execute it
                 }
             }
         }
 
-        stage('Test') {
+        stage('Frontend-Test') {
             steps {
                 script {
                     // Add steps for running tests here, e.g., unit tests
+                    dir('Frontend')
                     sh './test,sh'  // Replace with your test command if using Node.js
                 }
             }
         }
 
-        stage('Deploy') {
+        stage('Frontend-Deploy') {
             steps {
                 script {
                     // If you have a deploy script, run it
+                    dir('Frontend')
                     sh './deploy.sh'  // Example deploy script
                 }
             }
@@ -46,11 +49,11 @@ pipeline {
     post {
         success {
             // Actions to take on success
-            echo 'Build and deploy successful!'
+            echo 'Build and deploy successful for frontend!'
         }
         failure {
             // Actions to take on failure
-            echo 'Build failed!'
+            echo 'Build failed for forntend!'
         }
     }
 }
