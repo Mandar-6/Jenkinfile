@@ -38,4 +38,4 @@ pipeline {
         }
     }
 }
-}
+} //for ending the curly braces
