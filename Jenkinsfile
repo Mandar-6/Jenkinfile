@@ -18,9 +18,10 @@ pipeline {
             steps {
                 script {
                     // Example build script
-                    dir('Frontend')
+                    dir('Frontend'){
                     sh 'chmod +x ./build.sh'
                     sh './build.sh'  // If you have a build script, execute it
+                    }
                 }
             }
         }
@@ -29,8 +30,9 @@ pipeline {
             steps {
                 script {
                     // Add steps for running tests here, e.g., unit tests
-                    dir('Frontend')
+                    dir('Frontend'){
                     sh './test,sh'  // Replace with your test command if using Node.js
+                    }
                 }
             }
         }
@@ -39,8 +41,9 @@ pipeline {
             steps {
                 script {
                     // If you have a deploy script, run it
-                    dir('Frontend')
+                    dir('Frontend'){
                     sh './deploy.sh'  // Example deploy script
+                    }
                 }
             }
         }
