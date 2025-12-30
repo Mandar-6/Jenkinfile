@@ -28,7 +28,7 @@ pipeline {
             steps {
                 script {
                     // Add steps for running tests here, e.g., unit tests
-                    sh echo 'Testing...'  // Replace with your test command if using Node.js
+                    sh './test,sh'  // Replace with your test command if using Node.js
                 }
             }
         }
@@ -37,7 +37,7 @@ pipeline {
             steps {
                 script {
                     // If you have a deploy script, run it
-                    sh 'Deploying...'  // Example deploy script
+                    sh './deploy.sh'  // Example deploy script
                 }
             }
         }
