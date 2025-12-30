@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "Running build script......"
 # Install dependencies
-npm run 
+
 npm install #install dependencies
 
 # Build the project 
